@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="card">
+        <h1>Merry Christmas!</h1>
+        <p>To Melca,</p>
+        <p>Another year has passed, Putang ina padin tlga. Anw Merry xmas sayo and i hope na maganda ang salubong sayo ng pasko hehehe, always take care of yourself and mag iingat ka palagi. Yknow me naman i dont write too much, but im sure naman na yknow what i mean already. Merry Christmas, Melca! hope to see you soon!</p>
+        <div class="signature">
+            With love and warm wishes,<br>
+            [Jovan :)]
+        </div>
+    </div>
+
+    <script>
+        function createSnowflakes() {
+            for(let i = 0; i < 50; i++) {
+                const snowflake = document.createElement('div');
+                snowflake.className = 'snowflake';
+                snowflake.style.left = Math.random() * 100 + 'vw';
+                snowflake.style.animationDuration = (Math.random() * 3 + 2) + 's';
+                snowflake.style.opacity = Math.random();
+                snowflake.innerHTML = '❄';
+                document.body.appendChild(snowflake);
+            }
+        }
+        createSnowflakes();
+    </script>
+</body>
+</html>
